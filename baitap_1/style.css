@@ -1,0 +1,227 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gotham';
+}
+ul, ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1118px;
+    margin: 0 auto;
+    max-height: 50%;
+}
+.d-flex {
+    display: flex;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.justify-content-end {
+    justify-content: end;
+}
+
+
+header {
+    background-color: #172932;
+    box-shadow: 0px 11px 28px rgba(0, 0, 0, 0.1);
+    margin: 0px 0px 0px 0px;
+    height: 100%;
+}
+.top .container li a {
+    margin: 10px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.top .container {
+    align-items: center;
+}
+
+.bottom {
+    border: 1px solid #295660;
+}
+
+header .menu li {
+    
+}
+.bottom .menu {
+    align-items: center;
+}
+
+.bottom .container {
+    justify-content: space-between; 
+}
+
+
+header .menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight:500;
+    margin: 15px;
+}
+
+.bottom button {
+    border: 0;
+    border-radius: 4px;
+    width: 100px;
+    height: 32px;
+    background-color: #EC008C;
+    box-shadow: 0px 4px 13px rgba(236, 0, 140, 0.7);
+    color: white;
+    font-size: 16px;
+    font-weight:500;
+}
+
+
+
+#chain {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    font-style: normal;
+    position: absolute;
+    line-height: 66px;
+    background: linear-gradient(89.08deg, #FF0097 22.35%, #00D3FF 83.51%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    width: 351px;
+    height: 66px;
+    left: 380px;
+    top: 381px;
+}
+
+#quote {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 47px;
+    font-style: normal;
+    position: absolute;
+    color: white;
+
+    /* location */
+    width: 506px;
+    height: 52px;
+    left: 380px;
+    top: 453px;
+
+}
+
+.main-body ul li {
+    list-style: none;
+    display: inline;
+    margin: 15px;
+}
+
+.main-body ul {
+    position: absolute;
+    left: 330px;
+    top: 537px;
+    flex-direction: row;
+}
+
+.main-body ul li > button {
+    width: 214px;
+    height: 53px;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: white;
+    border: 0px;
+}
+
+#SC {
+    background-color: #0C94B0;
+    box-shadow: 0px 4px 13px #55C6D0;
+}
+
+#WP {
+    background-color: #EC008C;
+    box-shadow: 0px 4px 13px #55C6D0;
+}
+
+#cer {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 19px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    position: absolute;
+    width: 80.4px;
+    height: 19.2px;
+    left: 400px;
+    top: 606px;
+}
+
+.rec {
+    width: 73px;
+    height: 1.2px;
+    left: 397.5px;
+    top: 642.4px;
+    position: absolute;
+    background: white;
+}
+
+.certik-logo {
+    position: absolute;
+    width: 112.8px;
+    height: 84px;
+    left: 465px;
+    top: 589px;
+}
+
+.sub-bg {
+    position: absolute;
+    width: 798px;
+    height: 1122px;
+    left: 824px;
+    top: 25px;
+}
+
+.ambient-light {
+    width: 650px;
+    height: 371px;
+    border-radius: 50%;
+    position: absolute;
+    background: #00D3E0;
+    left: 36.04%;
+    right: 23.82%;
+    top: 52.06%;
+    bottom: 60.09%;
+    filter: blur(408px);
+}
+
+.bridge {
+    width: 1882px;
+    height: 119px;
+    background-color: white;
+    bottom: -240px;
+    position: absolute;
+    border: 2px solid #01FFF0;
+    box-shadow: 0px 0px 28px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+}
+
+.bridge .corp li {
+    list-style: none;
+    display: inline;
+    margin: 87px;
+}
+
+.bridge .corp {
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    left: 320px;
+    top: 28px;
+}
+
+.invest {
+    top: -16px;
+    position: absolute;
+}
