@@ -21,6 +21,13 @@ ul, ul li {
 .justify-content-end {
     justify-content: end;
 }
+.align-items-center {
+    align-items: center;
+}
+.align-items-start {
+    align-items: flex-start;
+}
+
 
 
 header {
@@ -31,7 +38,7 @@ header {
 
 main {
     background-color: #172932;
-    padding: 10% 0px 10% 0px;
+    padding: 5% 0px 5% 0px;
 }
 
 
@@ -48,14 +55,20 @@ main {
 
 .bottom {
     border-top: 1px solid #295660;
+    box-shadow: 0px 11px 28px rgba(0, 0, 0, 0.1);
 }
 
 .bottom .menu {
     align-items: center;
+    
 }
 
 .bottom .container {
     justify-content: space-between; 
+}
+
+main .right {
+    margin-top: -210px;
 }
 
 
@@ -87,6 +100,8 @@ header .menu li a {
     background: linear-gradient(89.08deg, #FF0097 22.35%, #00D3FF 83.51%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    position: absolute;
+    margin-top: -50px;
 }
 
 #quote {
@@ -96,8 +111,7 @@ header .menu li a {
     color: white;
 }
 
-main .container .left .lcontent {
-    align-items: center;
+main .container .left {
     padding-top: 15px;
 }
 
@@ -111,6 +125,10 @@ main .left ul li > button {
     border: 0px;
 }
 
+main .line {
+    padding-bottom: 20px;
+}
+
 #SC {
     background-color: #0C94B0;
     box-shadow: 0px 4px 13px #55C6D0;
@@ -121,16 +139,25 @@ main .left ul li > button {
     box-shadow: 0px 4px 13px #55C6D0;
 }
 
+main .btn #WP {
+    margin-left: 20px;
+}
+
+
+
+
 #cer {
     font-size: 14px;
     line-height: 19px;
     color: white;
+    
 }
 
 .rec {
     width: 80px;
     height: 1.2px;
     background: white;
+    margin-top: -15px;
 }
 
 
@@ -143,15 +170,12 @@ main .left ul li > button {
 }
 
 .ambient-light {
-    width: 650px;
+    width: 890px;
     height: 371px;
     border-radius: 50%;
     position: absolute;
     background: #00D3E0;
-    left: 36.04%;
-    right: 23.82%;
-    top: 52.06%;
-    bottom: 60.09%;
+    margin: 0 auto;
     filter: blur(408px);
 }
 
