@@ -64,6 +64,7 @@ main {
 
 .bottom {
     border-top: 1px solid #295660;
+    padding: 10px 0;
 }
 
 .bottom .menu {
