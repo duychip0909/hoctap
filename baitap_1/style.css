@@ -65,7 +65,7 @@ header {
 
 .wrapper {
     justify-content: center;
-    display: flex;
+    display: inline-flex;
 }
 
 .top {
@@ -277,10 +277,6 @@ main .banner .container {
     margin-top: 3rem;
 }
 
-.info {
-    padding: 50px 0;
-}
-
 .read-more-btn {
     position: relative;
     display: inline-block;
@@ -330,6 +326,40 @@ main .banner .container {
     text-align: center;
 }
 
+.section {
+    padding: 50px 0;
+}
 
+.info {
+    padding: 30px 0;
+}
 
+.frame {
+    padding: 30px 10px 20px;
+    background-color: white;
+    border-radius: 5px;
+    width: 17%;
+    margin: 0 12px;
+    background: linear-gradient(242.01deg, #FFFFFF 20.82%, rgba(255, 255, 255, 0.79) 65.38%);
+    box-shadow: 17px 0px 28px rgb(85 198 208 / 15%);
+}
 
+.wrap {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+}
+
+.arrow {
+    background: url(https://dev.hyperaschain.com/img/arrowBlue.png);
+    width: 24px;
+    height: 25px;
+    display: inline-block;
+    position: relative;
+}
+
+.bg-grid {
+    background: #1b2a32 url(https://dev.hyperaschain.com/img/grid.png) no-repeat center top / contain;
+    position: relative;
+}
