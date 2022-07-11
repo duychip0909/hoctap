@@ -33,6 +33,9 @@ ul, ul li {
 .align-items-center {
     align-items: center;
 }
+.justify-content-center {
+    justify-content: center;
+}
 .custom {
     margin-bottom: -20px;
     margin-top: -10px;
@@ -60,7 +63,7 @@ header {
     box-shadow: 0px 11px 28px rgba(0, 0, 0, 0.1);
     margin: 0px 0px 0px 0px;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .wrapper {
@@ -85,7 +88,7 @@ header {
 
 .bottom {
     border-top: 1px solid #295660;
-    padding: 15px 0;
+    padding: 12px 0;
 }
 
 .bottom .menu {
@@ -101,7 +104,7 @@ header .menu li a {
     text-decoration: none;
     color: white;
     font-weight:500;
-    padding: 10px 25px;
+    padding: 10px 20px;
 }
 
 .gradient {
@@ -283,9 +286,7 @@ main .banner .container {
     padding: 15px 40px;
     text-decoration: none;
     color: #EC008C;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    cursor: pointer;
-    user-select: none;
+    font-weight: bold;
 }
 
 .read-more-btn::before {
@@ -330,18 +331,33 @@ main .banner .container {
     padding: 50px 0;
 }
 
-.info {
-    padding: 30px 0;
-}
 
 .frame {
+    width: 17%;
+}
+
+.item {
     padding: 30px 10px 20px;
     background-color: white;
     border-radius: 5px;
-    width: 17%;
     margin: 0 12px;
+    height: 100%;
+    position: relative;
     background: linear-gradient(242.01deg, #FFFFFF 20.82%, rgba(255, 255, 255, 0.79) 65.38%);
     box-shadow: 17px 0px 28px rgb(85 198 208 / 15%);
+}
+
+.item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -2px;
+    border-radius: inherit;
+    background: linear-gradient(to right, rgb(255 255 255 / 0%), #9df7ff);
 }
 
 .wrap {
@@ -362,4 +378,207 @@ main .banner .container {
 .bg-grid {
     background: #1b2a32 url(https://dev.hyperaschain.com/img/grid.png) no-repeat center top / contain;
     position: relative;
+}
+
+.sectionHeading {
+    font-size: 32px;
+}
+
+.partner {
+    width: 20%;
+    padding: 25px 15px;
+    filter: grayscale(1);
+}
+
+.row {
+    flex-wrap: wrap;
+}
+
+.investor {
+    width: 20%;
+    padding: 25px 15px;
+    filter: grayscale(1);
+}
+
+.white-bg {
+    background-color: white;
+}
+
+.innpa h2 {
+    margin-top: 0;
+}
+
+.investors {
+    padding-bottom: 0;
+}
+
+.topper {
+    background-color: #DB0082;
+    padding: 15px 0;
+}
+
+.list-unstyle {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footerSocial {
+    font-size: 25px;
+}
+
+.fab {
+    color: white;
+}
+
+.social-bar li {
+    padding-right: 30px;
+}
+
+footer {
+    position: relative;
+    background: linear-gradient(#C40075, #db0082);
+}
+
+footer .bot {
+    padding: 50px 0 0;
+}
+
+.per25 {
+ width: 25%;
+}
+
+.per75 {
+    width: 75%;
+}
+
+.bott {
+    color: white;
+    padding: 50px 0 0;
+}
+
+.per25 li {
+    margin: 20px 0;
+}
+
+.footerMenu .per {
+    padding: 0 10px;
+}
+
+.copyright {
+    border-top: 1px solid white;
+    font-size: 13px;
+    padding: 5px 0;
+    margin: 60px 100px 0;
+    color: white;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: white;
+}
+
+.mb-4 {
+    margin-bottom: 4px;
+}
+.mt-0 {
+    margin-top: 0;
+}
+
+.read-more-btn:hover {
+    text-decoration: none;
+    color: #fff;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background: linear-gradient(to right,#FF0097,#00D3FF);
+    border-radius: 6px;
+}
+
+.arrow:hover {
+    background: url(https://dev.hyperaschain.com/img/arorowWhite.png);
+}
+
+.frame p {
+    height: 45px;
+}
+
+.partner:hover {
+    filter: grayscale(0);
+}
+
+.investor:hover {
+    filter: grayscale(0);
+}
+
+.dropdown-toggle {
+    flex-wrap: nowrap;
+    padding: 10px 8px;
+}
+
+.dropdown-toggle::after {
+    position: absolute;
+    top: 15px;
+    display: block;
+    margin-left: -15px;
+    vertical-align: middle;
+    color: white;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+    right: 10px;
+}
+
+.menu li a:hover {
+    color: #DB0082;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.subMenu::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #fff;
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.menu .subMenu {    
+    display: none;
+    top: 45px;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #ffffff 20%, rgb(255 255 255 / 28%) 100%);
+    border: 1px solid #c5edf4;
+    box-shadow: 0px 4px 16px rgb(0 0 0 / 10%);
+    padding: 25px 0;
+    backdrop-filter: blur(15px);
+    min-width: 13rem;
+    text-align: left;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menu .subMenu > li a {
+    color: #1e2125;
+    padding: 0;
+    font-weight: bold;
+    display: inline-block;
+    margin: 10px 15px;
+}
+
+.menu .menuParent:hover .subMenu {
+    display: inline-block;
 }
