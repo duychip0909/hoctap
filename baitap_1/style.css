@@ -691,4 +691,130 @@ footer .bot {
     main .bg-grid {
         overflow: hidden;
     }
+    footer .per ul {
+        margin-bottom: 48px;
+    }
+}
+
+@media (max-width: 400px) {
+    header .bottom {
+        padding: 10px 0;
+    }
+    .ambient-light {
+        overflow: hidden;
+    }
+    .container {
+        max-width: 100%;
+        margin: 0 10px;
+    }
+    main .banner h1 {
+        font-size: 25px;
+    }
+    main .banner .heading3 {
+        font-size: 22px;
+    }
+        
+    main .banner {
+        padding: 20px 0;
+        text-align: center;
+    }
+    main .left, .right {
+        width: 100%;
+        max-width: 100%;
+        flex-shrink: 0;
+    }
+    main .btn {
+        padding: 16px 20px;
+        width: 100%;
+        max-width: 100%;
+    }
+    main .custom {
+        display: block;
+    }
+    main .custom a {
+        margin-left: 0;
+    }
+    main .custom .btn-Blue {
+        margin-bottom: 8px;
+    }
+    .bg-color .banner .container {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    main .cer {
+        font-size: 0.875em;
+        margin-top: 1rem;
+        margin-left: 95px;
+    }
+    main .banner p {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        display: block;
+    }
+    .sponsor .itemm img {
+        max-width: 100%;
+        vertical-align: middle;
+        margin: 10px 0;
+    }
+    .sponsor .itemm {
+        display: block;
+        width: 50%;
+    }
+    main .info h2 {
+        font-size: 25px;
+    }
+    main .features .fea {
+        width: 100%;
+    }
+    .roundPink img {
+        width: 35px;
+    }
+    .roundPink {
+        position: absolute;
+        left: 0;
+    }
+    .features .fea .bag {
+        position: relative;
+        padding: 0 0 0 80px;
+        text-align: center;
+    }
+    main .section {
+        padding: 1rem;
+    }
+    main .list-envi ul li {
+        padding: 0 6px;
+        font-size: smaller;
+    }
+    main .frame {
+        width: 100%;
+        max-width: 100%;
+    }
+    main .frame .item {
+        margin: 5px -140px;
+        padding: 0 10px 10px;
+    }
+    main .frame .item img {
+        max-width: 100%;
+    }
+    main .parentt {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .innpa .sectionHeading {
+        font-size: 25px;
+    }
+    main section p {
+        color: #58595B;
+    }
+    main .partner, .investor {
+        width: 33%;
+        padding: 10px;
+    }
+    main .partner, .investor img {
+        max-width: 100%;
+    }
+    
+
+
 }
