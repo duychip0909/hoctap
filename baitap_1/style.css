@@ -589,17 +589,19 @@ footer .copyright a {
     main .section {
         padding: 30px 0;
     }
-
-    
-
-    
-    .innpa img {
+    main .innpa img {
         max-width: 100%;
     }
+    main .bg-grid {
+        overflow: hidden;
+    }
+
+    /* FOOTER  */
+
     footer .container {
         margin: 0 10px;
     }
-    .bott {
+    footer .bott {
         padding: 30px 0;
     }
     footer .per25, .per75 {
@@ -608,29 +610,36 @@ footer .copyright a {
     footer .copyright {
         margin: 20px 10px 0;
     }
-    main .bg-grid {
-        overflow: hidden;
-    }
     footer .per ul {
         margin-bottom: 48px;
     }
 }
 
 @media (max-width: 400px) {
-    header .bottom {
-        padding: 10px 0;
-    }
+
+    /* GENERAL */
     .container {
         max-width: 100%;
         margin: 0 10px;
     }
+    section  {
+        padding: 30px 0;
+    }
+
+    /* HEADER  */
+
+    header .bottom {
+        padding: 10px 0;
+    }
+    
+    /* MAIN */
+
     main .banner h1 {
         font-size: 25px;
     }
     main .banner .heading3 {
         font-size: 22px;
     }
-        
     main .banner {
         padding: 20px 0;
         text-align: center;
@@ -654,7 +663,7 @@ footer .copyright a {
     main .custom .btn-Blue {
         margin-bottom: 8px;
     }
-    .bg-color .banner .container {
+    main .banner .container {
         flex-wrap: wrap;
         text-align: center;
     }
@@ -668,12 +677,12 @@ footer .copyright a {
         margin-bottom: 1rem;
         display: block;
     }
-    .sponsor .itemm img {
+    main .sponsor .itemm img {
         max-width: 100%;
         vertical-align: middle;
         margin: 10px 0;
     }
-    .sponsor .itemm {
+    main .sponsor .itemm {
         display: block;
         width: 50%;
     }
@@ -683,14 +692,14 @@ footer .copyright a {
     main .features .fea {
         width: 100%;
     }
-    .roundPink img {
+    main section .features .roundPink img {
         width: 35px;
     }
-    .roundPink {
+    main section .features .roundPink {
         position: absolute;
         left: 0;
     }
-    .features .fea .bag {
+    main section .features .fea .bag {
         position: relative;
         padding: 0 0 0 80px;
         text-align: start;
@@ -718,7 +727,7 @@ footer .copyright a {
         justify-content: center;
         flex-direction: column;
     }
-    .innpa .sectionHeading {
+    main .innpa .sectionHeading {
         font-size: 25px;
     }
     main section p {
@@ -731,12 +740,12 @@ footer .copyright a {
     main .partner, .investor img {
         max-width: 100%;
     }
-    section  {
-        padding: 30px 0;
-    }
     main .section .container {
         margin: 0;
     }
+
+    /* FOOTER  */
+
     footer .topper img {
         max-width: 100%;
     }
@@ -762,13 +771,13 @@ footer .copyright a {
     footer .per25 h5 {
         font-size: 16px;
     }
-    .footerMenu .per {
+    footer .footerMenu .per {
         padding: 0;
     }
-    .footerMenu .per ul {
+    footer .footerMenu .per ul {
         margin-bottom: 0;
     }
-    .footerMenu .per .spec {
+    footer .footerMenu .per .spec {
         margin-bottom: 3rem;
     }
     footer .copyright .mb-4 {
