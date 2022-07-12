@@ -430,7 +430,7 @@ main .banner .container {
 }
 
 .social-bar li {
-    padding-right: 30px;
+    margin-right: 30px;
 }
 
 footer {
@@ -585,6 +585,10 @@ footer .bot {
 .bag {
     margin: 0 10px;
 }
+
+.overflow-hidden {
+    overflow: hidden;
+}
 /* RESPONSIVE */
 @media (max-width: 992px) {
     main > .left {
@@ -700,9 +704,6 @@ footer .bot {
     header .bottom {
         padding: 10px 0;
     }
-    .ambient-light {
-        overflow: hidden;
-    }
     .container {
         max-width: 100%;
         margin: 0 10px;
@@ -814,7 +815,41 @@ footer .bot {
     main .partner, .investor img {
         max-width: 100%;
     }
-    
-
-
+    footer .topper img {
+        max-width: 100%;
+    }
+    footer .logoFooter {
+        width: 160px;
+    }
+    footer .social-bar ul {
+        font-size: 15px;
+    }
+    footer .social-bar ul li {
+        margin-right: 15px;
+    }
+    footer .bot {
+        flex-wrap: wrap;
+    }
+    footer .footerMenu {
+        flex-direction: column;
+        text-align: center;
+    }
+    footer .per25, .per75 {
+        width: 100%;
+    }
+    footer .per25 h5 {
+        font-size: 16px;
+    }
+    .footerMenu .per {
+        padding: 0;
+    }
+    .footerMenu .per ul {
+        margin-bottom: 0;
+    }
+    .footerMenu .per .spec {
+        margin-bottom: 3rem;
+    }
+    footer .copyright .mb-4 {
+        margin-bottom: 8px;
+    }
 }
