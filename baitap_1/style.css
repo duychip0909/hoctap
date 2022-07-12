@@ -594,6 +594,10 @@ footer .bot {
         width: 100%;
     }
 
+    .container {
+        max-width: 820px;
+    }
+
     main .banner h1 {
         font-size: 40px;
     }
@@ -669,7 +673,22 @@ footer .bot {
     main .section {
         padding: 30px 0;
     }
-    .investors .partner {
-        width: 20%;
+    .innpa img {
+        max-width: 100%;
+    }
+    footer .container {
+        margin: 0 10px;
+    }
+    .bott {
+        padding: 30px 0;
+    }
+    footer .per25, .per75 {
+        width: 50%;
+    }
+    footer .copyright {
+        margin: 20px 10px 0;
+    }
+    main .bg-grid {
+        overflow: hidden;
     }
 }
