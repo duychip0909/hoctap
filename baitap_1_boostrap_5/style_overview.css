@@ -100,7 +100,6 @@ h2 {
     width: 10%;
     position: absolute;
     left: 100px;
-
 }
 .bgGalaxy .roadMap .date {
     color: white;
@@ -111,6 +110,9 @@ h2 {
 .bgGalaxy .roadMap .marker img {
     width: 150px;
     filter: grayscale(1);
+    display: block;
+    position: relative;
+    margin: 0 auto 30px;
 }
 .bgGalaxy .roadMap .marker img:hover {
     filter: grayscale(0);
@@ -132,5 +134,13 @@ h2 {
 }
 .bgGalaxy .roadMap .contentRoadmap ul li {
     margin-bottom: 8px;
+}
+.bgGalaxy .roadMap .contentRoadmap .row>div:nth-child(odd) .marker .line {
+    transform: rotate(-35deg);
+    left: 50%;
+    bottom: 95px;
+}
+.bgGalaxy .roadMap .contentRoadmap .marker {
+    position: relative;
 }
 
