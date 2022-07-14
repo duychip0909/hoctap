@@ -1,6 +1,7 @@
 body {
     font-family: 'Gotham', sans-serif;
     background-color: #172932;
+    padding-top: 120px;
 }
 .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
     display: flex;
@@ -49,9 +50,12 @@ section {
 }
 header {
     box-shadow: 0px 11px 28px rgba(0, 0, 0, 0.1);
-    margin: 0px 0px 0px 0px;
-    position: relative;
-    z-index: 2;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    background: #172932;
+    top: 0;
+    left: 0;
 }
 header .button-menu {
     border: 0;
@@ -72,9 +76,6 @@ header .navbar {
     padding: 10px 0;
     border-top: 1px solid #28555F;
 }
-header .navbar .dropdown-toggle:hover {
-    color: #EC008C;
-}
 header .top ul li {
     margin-right: 30px;
 }
@@ -91,9 +92,21 @@ header .navbar ul li {
     margin: 0 10px;
     font-weight: 700;
 }
-header .navbar ul li a {
+header .navbar .nav-link, header .navbar .nav-link .show {
+    color: white;
+}
+header .navbar .nav-link:hover, header .navbar .nav-link .show {
+    color: #EC008C;
+}
+header .navbar .dropdown-item {
     font-weight: 500;
-    font-style: "Gotham Black";
+    border-bottom: 2px solid transparent;
+    display: inline-block;
+    background: transparent;
+    width: auto;
+}
+header .navbar .dropdown-item:hover {
+    border-bottom: 2px solid #EC008C;
 }
 header .navbar .dropdown-menu {
     border-radius: 8px;
