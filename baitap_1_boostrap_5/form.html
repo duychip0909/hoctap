@@ -25,13 +25,16 @@
                 </ul>
             </div>
         </div>
-        <div class="nav">
-            <div class="container-lg d-flex align-items-center justify-content-between">
-                <a href="#"><img src="https://dev.hyperaschain.com/img/logo.png" alt=""></a>
-                <nav class="navbar navbar-expand-lg">
-                    <div class="container-lg">
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+        <div class="navbar navbar-expand-lg">
+            <div class="container-lg">
+                <a href="#" class="navbar-brand"><img src="https://dev.hyperaschain.com/img/logo.png" alt=""></a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon d-flex justify-content-center align-items-center">
+                        <i class="fas fa-bars text-white"></i>
+                    </span>
+                </button>
+                        <div class="collapse navbar-collapse show" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Technology</a>
                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -41,7 +44,7 @@
                                             <li><a class="dropdown-item" href="#">Whitepaper</a></li>
                                         </ul>
                                 </li>
-                                <li class="nav-item dropdown p-1">
+                                <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ecosystem</a>
                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                             <li><a class="dropdown-item" href="#">Testnet</a></li>
@@ -80,13 +83,11 @@
                                             <li><a class="dropdown-item" href="#">Contact</a></li>
                                         </ul>
                                 </li>
-                                <li class="nav-item">
-                                    <a href="#" class="button-menu text-decoration-none">Buy Hyra</a>
-                                </li>
                             </ul>    
+                            <li class="nav-item d-lg-block d-none">
+                                <a href="#" class="button-menu text-decoration-none">Buy Hyra</a>
+                            </li>
                         </div>
-                    </div>
-                </nav>
             </div>
         </div>
     </header>
