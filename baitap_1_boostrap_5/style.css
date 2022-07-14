@@ -303,4 +303,81 @@ footer .copyright a {
     footer .footerMenuu {
         padding-top: 30px;
     }
+    main .banner {
+        padding: 50px 0;
+    }
+}
+
+@media (max-width: 400px) {
+    header .top ul li {
+        margin-right: 20px;
+    }
+    header .top ul .d-block {
+        margin-right: 0;
+    }
+    main .banner h1 {
+        font-size: 25px;
+    }
+    main .banner h3 {
+        font-size: 22px;
+    }
+    main .banner {
+       text-align: center;
+       padding: 20px 0;
+    }
+    main .banner .btn {
+        font-size: 16px;
+        padding: 16px 20px;
+    }
+    main .wallet a {
+        margin: 10px 0;
+        display: block;
+    }
+    main .bg-grid h2 {
+        font-size: 25px;
+    }
+    main .wrapper {
+        position: relative;
+        padding: 0 0 0 80px;
+    }
+    main .wrapper .roundPink {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    main .environment ul {
+        padding: 0 0 15px;
+    }
+    main .environment ul li {
+        padding: 0 6px;
+    }
+    main section .parentt .frame {
+        margin: 5px 0;
+        height: auto;
+        padding: 0 10px 10px;
+    }
+    main .partners .part {
+        width: 33%;
+        padding: 10px;
+    }
+    footer .logoFooter {
+        width: 160px;
+    }
+    footer .topper ul li {
+        margin-right: 15px;
+        font-size: 15px;
+    }
+    footer .topper {
+        padding: 0px;
+    }
+    footer h5 {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    footer > section {
+        padding: 0px;
+    }
+    footer .copyright {
+        margin: 20px 10px 0;
+    }
 }
