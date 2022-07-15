@@ -68,13 +68,12 @@ h2 {
     transform: rotate(180deg);
 }
 #overviewPage .ecosystem .w.w1:before {
-    right: 0;
+    left: 0;
     top: 0;
     transform: scaleX(1);
-    transform: rotate(0deg);
 }
 #overviewPage .ecosystem .w.w3:before {
-    right: 0;
+    left: 0;
     top: 0;
     transform: scaleY(-1);
 }
