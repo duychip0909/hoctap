@@ -23,7 +23,7 @@ h2 {
 #overviewPage .ecosystem {
     margin-top: -100px;
     background: #fff;
-    margin-top: -100px;
+    padding: 50px 0 250px;
 }
 #overviewPage .w {
     position: relative;
@@ -88,18 +88,39 @@ h2 {
     position: relative;
     padding: 0 0 0 80px;
 }
-.bgGalaxy .roadMap .line {
+.bgGalaxy .roadMap .active .line  {
     height: 3px;
     width: 100%;
     position: absolute;
     background: #fe3bbe;
 }
-.bgGalaxy .roadMap .line:before {
+.bgGalaxy .roadMap .inactive .line  {
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    background: #30dddc;
+}
+.bgGalaxy .roadMap .active .line:before {
     content: "";
     background: #fff;
     width: 10%;
     position: absolute;
     left: 100px;
+    height: 100%;
+    box-shadow: 0 0 10px 2px #30dddc;
+}
+.bgGalaxy .roadMap .inactive .line:before {
+    content: "";
+    background: #fff;
+    width: 10%;
+    position: absolute;
+    left: 100px;
+    height: 100%;
+    box-shadow: 0 0 10px 2px #30dddc;
+}
+.bgGalaxy .roadMap .continue .line {
+    background: linear-gradient(131deg, rgba(34,193,195,1) 10%, rgba(255,255,255,0) 90%);
+    transform: rotate(35deg)!important;
 }
 .bgGalaxy .roadMap .date {
     color: white;
@@ -140,7 +161,87 @@ h2 {
     left: 50%;
     bottom: 95px;
 }
+.bgGalaxy .roadMap .contentRoadmap .row>div:nth-child(even) .marker .line {
+    transform: rotate(-145deg);
+    left: 50%;
+    bottom: -30px;
+}
 .bgGalaxy .roadMap .contentRoadmap .marker {
     position: relative;
 }
+.bgGalaxy .roadMap .contentRoadmap .row .continue {
+    overflow: hidden;
+}
+.bgGalaxy .box {
+    background-image: linear-gradient(to right, #ff0097, #d567e5, #879aff, #0bbcff, #00d3ff);
+    margin-top: -160px;
+    padding: 10px;
+}
+.bgGalaxy .box .videoWrapper {
+    position: relative;
+    padding-bottom: 56%;
+}
+.bgGalaxy .box .videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    header .button-menu {
+        font-size: 18px;
+    }
+    header .buyHyra {
+        margin-right: 0!important;
+    }
+    #overviewPage .Top_banner {
+        padding: 60px 0 140px;
+    }
+    #overviewPage h1 {
+        font-size: 40px;
+    }
+    #overviewPage .eco_heading {
+        margin-bottom: 30px;
+        font-size: 32px;
+    }
+    #overviewPage .ecosystem {
+        margin-top: -40px;
+    }
+    #overviewPage .ecosystem .w.w1, #overviewPage .ecosystem .w.w3 {
+        padding: 20px 140px 20px 0px;
+    }
+    #overviewPage .ecosystem .w.w2, #overviewPage .ecosystem .w.w4 {
+        padding: 20px 0px 20px 140px;
+    }
+    #overviewPage .hyp_logo {
+        margin: -50px auto;
+        width: 150px;
+    }
+    .bgGalaxy .techAdv .wrapper {
+        padding: 0;
+    }
+    .bgGalaxy .roadMap .marker img {
+        width: 90px;
+    }
+    .bgGalaxy .roadMap .date {
+        font-size: 14px;
+        margin-bottom: -20px;
+    }
+    .bgGalaxy .roadMap .contentRoadmap ul {
+        padding-right: 0px;
+        margin-left: 0px;
+        font-size: 14px;
+    }
+    footer .topper {
+        padding: 0;
+    }
+    #overviewPage .w.w2, .w.w3, .w.w4 .text {
+        text-align: justify;
+    }
+    #overviewPage .w.w1 .text {
+        text-align: justify;
+    }
+}
