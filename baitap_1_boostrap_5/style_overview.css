@@ -30,10 +30,10 @@ h2 {
     height: 100%;
     text-align: justify;
 }
-#overviewPage .w.w1, .w.w3 .icon {
+#overviewPage .w.w1 .icon, #overviewPage .w.w3 .icon {
     text-align: right;
 }
-#overviewPage .w.w2, .w.w4 .icon {
+#overviewPage .w.w2 .icon, #overviewPage .w.w4 .icon {
     text-align: left;
 }
 #overviewPage .ecosystem .w.w1, #overviewPage .ecosystem .w.w3 {
@@ -84,10 +84,6 @@ h2 {
 .bgGalaxy .techAdv h5, p {
     color: white;
 }
-.bgGalaxy .techAdv .wrapper {
-    position: relative;
-    padding: 0 0 0 80px;
-}
 .bgGalaxy .roadMap .active .line  {
     height: 3px;
     width: 100%;
@@ -118,8 +114,16 @@ h2 {
     height: 100%;
     box-shadow: 0 0 10px 2px #30dddc;
 }
+.bgGalaxy .roadMap .inactive .continue .line:before {
+    content: "";
+    width: 10%;
+    position: absolute;
+    left: 100px;
+    height: 100%;
+    box-shadow: 0 0 10px 2px #30dddc;
+}
 .bgGalaxy .roadMap .continue .line {
-    background: linear-gradient(131deg, rgba(34,193,195,1) 10%, rgba(255,255,255,0) 90%);
+    background: linear-gradient(131deg, rgba(34,193,195,1) 0%, rgba(255,255,255,0) 60%);
     transform: rotate(35deg)!important;
 }
 .bgGalaxy .roadMap .date {
@@ -169,7 +173,7 @@ h2 {
 .bgGalaxy .roadMap .contentRoadmap .marker {
     position: relative;
 }
-.bgGalaxy .roadMap .contentRoadmap .row .continue {
+.bgGalaxy .roadMap .contentRoadmap .row .inactive.continue {
     overflow: hidden;
 }
 .bgGalaxy .box {
@@ -220,9 +224,6 @@ h2 {
         margin: -50px auto;
         width: 150px;
     }
-    .bgGalaxy .techAdv .wrapper {
-        padding: 0;
-    }
     .bgGalaxy .roadMap .marker img {
         width: 90px;
     }
@@ -243,5 +244,141 @@ h2 {
     }
     #overviewPage .w.w1 .text {
         text-align: justify;
+    }
+    .bgGalaxy .roadMap .inactive.continue .line {
+        overflow: hidden;
+    }
+    .bgGalaxy .roadMap .row>div:nth-child(even) {
+        position: relative;
+        top: -95px;
+    }
+    .bgGalaxy .roadMap .contentRoadmap .row>div:nth-child(odd) .marker .line {
+        transform: rotate(-35deg);
+        left: 50%;
+        bottom: 75px;
+    }
+    .bgGalaxy .roadMap .contentRoadmap .row>div:nth-child(even) .marker .line {
+        transform: rotate(-145deg);
+        left: 50%;
+        bottom: -20px;
+    }
+    section {
+        padding: 30px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    header .button-menu {
+        font-size: 14px!important;
+    }
+    .bgGalaxy .roadMap .contentRoadmap .active, .inactive .marker {
+        overflow: hidden;
+    }
+    #overviewPage .Top_banner {
+        padding: 40px 0 70px;
+    }
+    #overviewPage h1 {
+        font-size: 25px;
+    }
+    #overviewPage .eco_heading {
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+    #overviewPage .ecosystem {
+        padding-bottom: 140px;
+    }
+    #overviewPage .ecosystem .w {
+        padding: 20px 0 0!important;
+        text-align:left!important;
+    }
+    #overviewPage .ecosystem .w.w1 .icon, #overviewPage .ecosystem .w.w3 .icon {
+        text-align:left!important;
+    }
+    #overviewPage .ecosystem .w .text {
+        text-align:left!important;
+    }
+    #overviewPage .ecosystem .w:before {
+        background: url(https://dev.hyperaschain.com/img/bg-item-overview.png) no-repeat left top / contain;
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: calc(100% - 40px);
+        display: none;
+    }
+    .bgGalaxy .techAdv h2 {
+        font-size: 25px;
+    }
+    .bgGalaxy .box {
+        margin-top: -110px;
+    }
+    .infoElement .wrapper img {
+        width: 35px;
+    }
+    .roadMap h2 {
+        font-size: 25px;
+    }
+    .roadMap .contentRoadmap {
+        margin-top: 0!important;
+    }
+    .roadMap .contentRoadmap .marker {
+        display: none;
+    }
+    .roadMap .contentRoadmap .active, .roadMap .contentRoadmap .inactive {
+        margin: 10px 0;
+    }
+    .roadMap .contentRoadmap .active .date {
+        color: #fe3bbe;
+    }
+    .roadMap .contentRoadmap .date {
+        margin: 0 0 10px;
+        text-align: left;
+        font-size: 16px;
+        color: #30dddc;
+    }
+    .roadMap .contentRoadmap .active ul, .roadMap .contentRoadmap .inactive ul {
+        position: relative;
+    }
+    .roadMap .contentRoadmap ul li {
+        margin-bottom: 8px;
+    }
+    .roadMap .contentRoadmap .item.active ul::before {
+        background: #fe3bbe;
+    }
+    .roadMap .contentRoadmap .item ul::before, .roadMap .contentRoadmap .item ul::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 3px;
+        height: 100%;
+        background: #30dddc;
+    }
+    .roadMap .contentRoadmap .active ul:after {
+        background: #fff;
+        box-shadow: 0px 0px 10px 2px #fe3bbe;
+    } 
+    .roadMap .contentRoadmap .item.active ul::after {
+        width: 3px;
+        height: 30%;
+        top: 20%;
+        background: #fff;
+        box-shadow: 0px 0px 10px 2px #fe3bbe;
+    }
+    .roadMap .contentRoadmap .item.inactive ul::after {
+        width: 3px;
+        height: 30%;
+        top: 20%;
+        background: #fff;
+        box-shadow: 0px 0px 10px 2px #30dddc;
+    }
+    .bgGalaxy .roadMap .contentRoadmap .row>div:nth-child(n+1) {
+        position: relative;
+        top: 8px;
+    }
+    footer ul li {
+        margin: 0;
+    }
+    footer .topper {
+        padding: 15px 0;
     }
 }
